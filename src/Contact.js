@@ -5,7 +5,7 @@ const Contact = () => {
   const [data, setData] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:4000/data?page=contact')
+    fetch('https://basicbackend-bqnx.onrender.com/data?page=contact')
       .then(response => response.json())
       .then(data => setData(data.data))
       .catch(error => console.error('Error:', error));
